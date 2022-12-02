@@ -1,0 +1,46 @@
+{
+    "typeName": "Coaching",
+    "expenses":{
+        "schema": {
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "cost":{
+                    "type": "number"
+                }
+            }
+        },
+        "totalCostComputation": "expenses.cost*revenue.days"
+    },
+    "revenue":{
+        "schema":{
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "cost":{
+                    "type": "number"
+                },
+                "days":{
+                    "type": "number"
+                }
+            }
+        },
+        "totalCostComputation": "revenue.cost*revenue.days"
+    }
+}

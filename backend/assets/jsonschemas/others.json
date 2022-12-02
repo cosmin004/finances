@@ -1,0 +1,23 @@
+{
+    "typeName": "Others",
+    "expenses":{
+        "schema": {
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "cost":{
+                    "type": "number"
+                }
+            }
+        },
+        "totalCostComputation": "expenses.cost"
+    }
+}

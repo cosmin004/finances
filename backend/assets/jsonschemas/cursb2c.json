@@ -1,0 +1,49 @@
+{
+    "typeName": "Curs B2C",
+    "expenses":{
+        "schema": {
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "cost":{
+                    "type": "number"
+                }
+            }
+        },
+        "totalCostComputation": "expenses.cost*revenue.iteratii"
+    },
+    "revenue":{
+        "schema":{
+            "type": "object",
+            "properties": {
+                "year": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "cost":{
+                    "type": "number"
+                },
+                "iteratii":{
+                    "type": "number"
+                },
+                "medie-cursanti":{
+                    "type": "number"
+                }
+            }
+        },
+        "totalCostComputation": "revenue.cost*revenue.iteratii*revenue.medie-cursanti"
+    }
+}
